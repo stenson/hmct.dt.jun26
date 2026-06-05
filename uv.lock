@@ -257,7 +257,7 @@ wheels = [
 
 [[package]]
 name = "coldtype"
-version = "0.13.7"
+version = "0.13.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "coldtype-core" },
@@ -266,23 +266,23 @@ dependencies = [
     { name = "mido" },
     { name = "numpy" },
     { name = "potracer" },
-    { name = "pyobjc-core" },
-    { name = "pyobjc-framework-cocoa" },
-    { name = "pyobjc-framework-coretext" },
+    { name = "pyobjc-core", marker = "sys_platform == 'darwin'" },
+    { name = "pyobjc-framework-cocoa", marker = "sys_platform == 'darwin'" },
+    { name = "pyobjc-framework-coretext", marker = "sys_platform == 'darwin'" },
     { name = "pyopengl" },
     { name = "requests" },
     { name = "skia-pathops" },
     { name = "skia-python" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/9e/37bf18413e90cb574567f29f873f4c72758d1ccd444ddd5ca56e9b88aedd/coldtype-0.13.7.tar.gz", hash = "sha256:0b97f522a453e81601ed949e042f0c1569b221e339d9f6617cb0274fb37d4dc8", size = 2488 }
+sdist = { url = "https://files.pythonhosted.org/packages/0e/67/fd0fe9a88ab9e464b9f7c9215c47b37011508f16e86cc2516d545694ba0e/coldtype-0.13.8.tar.gz", hash = "sha256:157bf471f1183e22d79b3eb96360abd6cd28291543f59b61fe5b0fb97099a887", size = 2512 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d7/66/f40cfdefd2d3fc14459c89979c96c35806bba86d06c48378220017ba6d61/coldtype-0.13.7-py2.py3-none-any.whl", hash = "sha256:7fb8e24e0662fb75fceecaa0bc221e7249f2494ebb2c76729dc6915f5463ce28", size = 1470 },
+    { url = "https://files.pythonhosted.org/packages/96/97/1c78a59735df74a99130a3beced439475a40dda6487ab7df505fc7f7c244/coldtype-0.13.8-py2.py3-none-any.whl", hash = "sha256:8b08c96a379d3f11878d9573ce1d99939a37d5e17b76228fbe8e3e35f178012e", size = 1491 },
 ]
 
 [[package]]
 name = "coldtype-core"
-version = "0.13.7"
+version = "0.13.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "b3denv" },
@@ -294,9 +294,9 @@ dependencies = [
     { name = "show-in-file-manager" },
     { name = "skia-pathops" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b4/35/5309b4150fd20fb3104c1e60b727c21d8fb7d728623bba3ad37dcce10d82/coldtype_core-0.13.7.tar.gz", hash = "sha256:25f77efb48b4958ccba6374a177c117d30f071de5278dafe4e81a46cf0949cea", size = 618189 }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/29/a3c0829f854898e2799a5e3f87e33e0ef1737c06173d7a28e76fc395a9d4/coldtype_core-0.13.8.tar.gz", hash = "sha256:f5b8781e6c5f11ceb8dd5e1bae7c9370789b57f9bd8aff0e3da54e706da859b1", size = 618504 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/28/88c3954e8ed212215779537d39323b617e0fae238e84a42bb2d13287768f/coldtype_core-0.13.7-py3-none-any.whl", hash = "sha256:b6bb54f16b3454b07ccc4915bcb049a480b97853949281d000729abd77093e65", size = 663480 },
+    { url = "https://files.pythonhosted.org/packages/ba/8f/f88b4cf98755ffbccce0adaa1919918ad68f3aa9c30ddcfc513d32e72010/coldtype_core-0.13.8-py3-none-any.whl", hash = "sha256:5102fc04036c59502e9781a24bf0a3a45457e8a96e797a1f6094db3717874301", size = 664312 },
 ]
 
 [[package]]
@@ -481,7 +481,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "coldtype", specifier = ">=0.13.7" }]
+requires-dist = [{ name = "coldtype", specifier = ">=0.13.8" }]
 
 [[package]]
 name = "idna"
